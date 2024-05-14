@@ -4,4 +4,31 @@
 	button {
 		font-weight: bold;
 	}
+.container{
+	height: 500px;
+	width: 500px;
+  position: relative;
+	background-color: greenyellow;
+  border: 4px solid black;
+	justify-items: center;
+
 }
+
+.child {
+	height: 300px;
+	width: 300px;
+  position: absolute;
+	background-color: orange;
+  border: 4px solid red;
+transform: translate(+30%, +30%) ;
+
+}
+.child1 {
+	height: 150px;
+	width: 150px;
+  position: absolute;
+  background-color: whitesmoke;
+  border: 4px solid black;
+	transform: translate(+45%, +45%) ;
+}
+	};
