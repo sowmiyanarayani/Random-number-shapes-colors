@@ -1,15 +1,16 @@
 const config = {
 	countStart: 0,
 	increment: 1,
-	shapeStyle: {
+	shapeStyles: {
 		square: {
 			width: '100px',
 			height: '100px',
-			colour: 'red',
+			backgroundColor: 'red',
 		},
 		rectangle: {
 			width: '200px',
 			height: '100px',
+			backgroundColor: 'blue',
 		},
 	},
 	shapes: ['square', 'rectangle'],

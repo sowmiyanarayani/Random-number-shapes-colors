@@ -1,12 +1,13 @@
 import { React } from 'react';
 import './App.scss';
-import SimpleButton from './components/simpleButton';
-
-const App = ({ state: { count, refreshID }}) =>
+import InputBox from './components/InputBox';
+import Shapes from './components/Shapes';
+const App = (context) =>
 	<div className="App">
-		<div>Count: { count }</div>
-		<div>{ SimpleButton() }</div>
-		<div>Refresh ID: { refreshID }</div>
+		<center>
+			<InputBox { ...context }/>
+			<Shapes { ...context }/>
+		</center>
 	</div>;
 
 export default App;
