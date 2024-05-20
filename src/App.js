@@ -2,6 +2,7 @@ import { React } from 'react';
 import './App.scss';
 import InputBox from './components/InputBox';
 import Shapes from './components/Shapes';
+
 const App = (context) =>
 	<div className="App">
 		<center>

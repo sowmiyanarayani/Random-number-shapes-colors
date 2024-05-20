@@ -3,13 +3,13 @@ const config = {
 	increment: 1,
 	shapeStyles: {
 		square: {
-			width: '100px',
-			height: '100px',
+			width: '10vw',
+			height: '10vh',
 			backgroundColor: 'red',
 		},
 		rectangle: {
-			width: '200px',
-			height: '100px',
+			width: '25vw',
+			height: '10vh',
 			backgroundColor: 'blue',
 		},
 	},

@@ -1,9 +1,11 @@
 import { React } from 'react';
 
+// eslint-disable-next-line max-lines-per-function
 const InputBox = (context) => {
 	const {
-		state: { number },
-		actions: { setNumber },
+		state: { boxCount, boxesArray, shape },
+		actions: { setBox, updateArray },
+		config: { shapeStyles },
 	} = context;
 
 	return <div>
@@ -11,10 +13,17 @@ const InputBox = (context) => {
 		<input
 			type="number"
 			placeholder="enter the number"
-			value={ number }
-			onChange={ (event) => setNumber(event.target.value) }
+			onChange={ (event) => setBox(event.target.value) }
 		/>
-		<button>click </button>
+		<button
+			onClick={ () => updateArray(boxCount) }
+		>click</button>
+		{ boxesArray.map((box, index) =>
+			<div
+				key={ index }
+				style={ { ...shapeStyles[shape] } }
+
+			/>) }
 	</div>;
 };
 
