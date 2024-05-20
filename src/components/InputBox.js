@@ -1,3 +1,4 @@
+import { peek } from '@laufire/utils/debug';
 import { React } from 'react';
 
 // eslint-disable-next-line max-lines-per-function
@@ -8,6 +9,7 @@ const InputBox = (context) => {
 		config: { shapeStyles },
 	} = context;
 
+	peek(updateArray);
 	return <div>
 		<label>Enter The Number : </label>
 		<input
@@ -17,12 +19,11 @@ const InputBox = (context) => {
 		/>
 		<button
 			onClick={ () => updateArray(boxCount) }
-		>click</button>
+		>generate shapes</button>
 		{ boxesArray.map((box, index) =>
 			<div
 				key={ index }
 				style={ { ...shapeStyles[shape] } }
-
 			/>) }
 	</div>;
 };

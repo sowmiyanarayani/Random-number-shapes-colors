@@ -7,9 +7,9 @@ const seed = {
 	count: config.countStart,
 	refreshID: rndString(refreshIDLength),
 	shape: 'square',
-	number: '',
-	boxCount: '1',
-	boxesArray: [0, 0, 0, 0, 0],
+	number: 0,
+	boxCount: 0,
+	boxesArray: [],
 };
 
 export default seed;

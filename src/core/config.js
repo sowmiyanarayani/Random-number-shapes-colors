@@ -4,13 +4,15 @@ const config = {
 	shapeStyles: {
 		square: {
 			width: '10vw',
-			height: '10vh',
+			height: '10vw',
 			backgroundColor: 'red',
+			margin: '1%',
 		},
 		rectangle: {
-			width: '25vw',
+			width: '15vw',
 			height: '10vh',
 			backgroundColor: 'blue',
+			margin: '1%',
 		},
 	},
 	shapes: ['square', 'rectangle'],

@@ -1,13 +1,13 @@
 import { React } from 'react';
 import './App.scss';
 import InputBox from './components/InputBox';
-import Shapes from './components/Shapes';
+import RandomShapes from './components/RandomShapes';
 
 const App = (context) =>
 	<div className="App">
 		<center>
 			<InputBox { ...context }/>
-			<Shapes { ...context }/>
+			<RandomShapes { ...context }/>
 		</center>
 	</div>;
 
