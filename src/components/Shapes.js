@@ -1,5 +1,5 @@
 import { React } from 'react';
-import RandomShapes from './SelectShapes';
+import SelectShapes from './SelectShapes';
 import { peek } from '@laufire/utils/debug';
 const Shapes = (context) => {
 	const {
@@ -10,7 +10,7 @@ const Shapes = (context) => {
 	peek(shape);
 	return <div>
 		<div style={ { ...shapeStyles[shape] } }/>
-		<RandomShapes { ...context }/>
+		<SelectShapes { ...context }/>
 	</div>;
 };
 

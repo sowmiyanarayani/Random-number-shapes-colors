@@ -2,7 +2,7 @@ import { React } from 'react';
 import './App.scss';
 import InputBox from './components/generateShapes';
 import RandomShapes from './components/SelectShapes';
-import GenerateShapes from './components/GenerateRandomNumber';
+import GenerateShapes from './components/RandomNumber';
 
 const App = (context) =>
 	<div className="App">
