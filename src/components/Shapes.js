@@ -1,5 +1,5 @@
 import { React } from 'react';
-import RandomShapes from './RandomShapes';
+import RandomShapes from './SelectShapes';
 import { peek } from '@laufire/utils/debug';
 const Shapes = (context) => {
 	const {
