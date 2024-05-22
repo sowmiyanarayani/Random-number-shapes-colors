@@ -10,6 +10,7 @@ const seed = {
 	number: 0,
 	boxCount: 0,
 	boxesArray: [],
+	color: '#FFFFFF',
 };
 
 export default seed;
