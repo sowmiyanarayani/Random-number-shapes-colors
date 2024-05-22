@@ -1,15 +1,15 @@
 import { React } from 'react';
 import './App.scss';
-import InputBox from './components/generateShapes';
-import RandomShapes from './components/SelectShapes';
-import GenerateShapes from './components/RandomNumber';
+import SelectShapes from './components/SelectShapes';
+import RandomNumber from './components/RandomNumber';
+import GenerateShapes from './components/GenerateShapes';
 
 const App = (context) =>
 	<div className="App">
 		<center>
-			<InputBox { ...context }/>
-			<RandomShapes { ...context }/>
 			<GenerateShapes { ...context }/>
+			<SelectShapes { ...context }/>
+			<RandomNumber { ...context }/>
 		</center>
 	</div>;
 

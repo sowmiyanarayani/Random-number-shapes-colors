@@ -4,8 +4,8 @@ const RandomNumber = (context) => {
 		state: { number },
 		actions: { setNumber },
 	} = context;
-	const min = 10;
-	const max = 1;
+	const max = 10;
+	const min = 1;
 	const generateRandomNumber = Math.floor(Math.random()
 				* (max - min + 1)) + min;
 
