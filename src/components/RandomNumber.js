@@ -1,17 +1,14 @@
 import { React } from 'react';
+import randomManager from '../services/randomManager';
 const RandomNumber = (context) => {
 	const {
 		state: { number },
 		actions: { setNumber },
 	} = context;
-	const max = 10;
-	const min = 1;
-	const generateRandomNumber = Math.floor(Math.random()
-				* (max - min + 1)) + min;
 
 	return <div>
 		<h3>generate the random numbers: { number }</h3>
-		<button onClick={ () => setNumber(generateRandomNumber) }>
+		<button onClick={ () => setNumber(randomManager.randomNumber()) }>
 			Generate</button>
 	</div>;
 };
